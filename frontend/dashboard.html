@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Page Title</title>
+    <title>Seleksi</title>
 
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:300,400,700"
       rel="stylesheet"
     />
 
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="../frontend/css/style.css" rel="stylesheet" />
   </head>
 
   <body>
     <nav>
       <div class="logo">
-        <h4>Blogku</h4>
+        <h4>Atika</h4>
       </div>
       <ul id="nav-links" class="nav-links">
         <li>
-          <form method="POST" action="logout.php">
+          <form method="POST" action="../backend/logoutaction.php">
             <button type="submit" class="btn btn-primary">Logout</button>
           </form>
         </li>
@@ -33,12 +33,14 @@
     </nav>
     <div class="container" id="blog">
       <div class="row">
-        <?php
-        include loginsuccess.php
-?>
-        <p>Selamat datang</p>
         <h1 class="hello">
-          Hello, <em><?php echo $_SESSION['email'];?>!</em>
+          Hello,
+          <em
+            ><?php
+include '../backend/loginsuccess.php';
+
+           echo $_SESSION['name'];?>!</em
+          >
         </h1>
       </div>
     </div>

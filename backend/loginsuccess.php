@@ -8,7 +8,6 @@ if(($_SESSION["email"])){
 $name=$_SESSION["name"];
 //dan jika terdaftar
 
-
 }
 else{
 
@@ -20,7 +19,7 @@ header( "Location: ../frontend/login.html" );
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Page Title</title>
+    <title>Seleksi</title>
 
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:300,400,700"
@@ -33,7 +32,7 @@ header( "Location: ../frontend/login.html" );
   <body>
     <nav>
       <div class="logo">
-        <h4>Blogku</h4>
+        <h4>Atika</h4>
       </div>
       <ul id="nav-links" class="nav-links">
         <li>
